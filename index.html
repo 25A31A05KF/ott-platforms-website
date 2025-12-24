@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OTT Hub - Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="welcome-bg">
+
+    <div class="form-container">
+        <h1>🎬 Welcome to OTT Hub</h1>
+        <p>All your favourite OTT platforms in one place</p>
+
+        <input type="text" id="name" placeholder="Enter your Name" required>
+        <input type="tel" id="phone" placeholder="Enter your Phone Number" required>
+
+        <button onclick="goNext()">Continue</button>
+
+        <div class="contact">
+            <p>📞 For any queries: <b>7993405599</b></p>
+            <p>📧 Gmail: <b>sbjba721829@gmail.com</b></p>
+        </div>
+    </div>
+
+<script>
+function goNext() {
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+
+    if(name === "" || phone === "") {
+        alert("Please enter both Name and Phone Number");
+    } else {
+        window.location.href = "platforms.html";
+    }
+}
+</script>
+
+</body>
+</html>
